@@ -4,6 +4,7 @@
 //
 //  Created by mac on 2023-03-22.
 // Josiah Galloway 101296257
+//Umit Kilinc - 101232721
 import SwiftUI
 
 // Define a SwiftUI view named `ListRowView` that displays a single row of a list.

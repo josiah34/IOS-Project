@@ -4,6 +4,7 @@
 //
 //  Created by mac on 2023-03-22.
 // Josiah Galloway 101296257
+//Ravkeerat Singh - 101344680
 
 import SwiftUI
 
@@ -24,7 +25,8 @@ struct NoItemsView: View {
                     .font(.title)
                     .fontWeight(.semibold)
                 Text("Start chasing goals today!!")
-                    .padding(.bottom, 20)
+                    .padding(.bottom, 50)
+                    .padding(.top,50)
                 
                 // Use a `NavigationLink` to allow the user to launch the `AddView`.
                 NavigationLink(
@@ -34,11 +36,11 @@ struct NoItemsView: View {
                         Text("Launch your goals🚀")
                             .foregroundColor(.white)
                             .font(.headline)
-                            .frame(height: 55)
+                            .frame(height: 70)
                             // Use the accent color for the button background if the animation is not active,
                             // and use the secondary accent color if the animation is active.
                             .background(animate ? secondaryAccentColor : Color.accentColor)
-                            .cornerRadius(210)
+                            .cornerRadius(250)
                     } )
                     // Add some padding to the button.
                     .padding(.horizontal, animate ? 30 : 50)
