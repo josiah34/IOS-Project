@@ -1,7 +1,7 @@
 # IOS-Project (Goal Getter)
 
 
-Features Include
+Features To Include
 - Adding task 
 - Deleting Task 
 - Editing Task 
