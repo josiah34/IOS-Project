@@ -6,6 +6,7 @@
 // Josiah Galloway
 //Edward Entecott 101190443
 
+
 import SwiftUI
 
 struct ListView: View {
@@ -24,7 +25,7 @@ struct ListView: View {
                 List {
                     // Loop through each item in the list and display it in a ListRowView
                     ForEach(listViewModel.items) { item in
-                        ListRowView(item: item)
+                        ListRowView(item: item, listViewModel: listViewModel)
                             // When a ListRowView is tapped, update the corresponding item with an animation
                             .onTapGesture {
                                 withAnimation(.linear) {

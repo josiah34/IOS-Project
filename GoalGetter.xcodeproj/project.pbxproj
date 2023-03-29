@@ -17,6 +17,7 @@
 		041D4B7029CB9A9600C3F2BA /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041D4B6F29CB9A9600C3F2BA /* ListViewModel.swift */; };
 		043A8A4129CBCC7E003B2F5A /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A8A4029CBCC7E003B2F5A /* NoItemsView.swift */; };
 		043A8A4529CBD60B003B2F5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043A8A4429CBD60B003B2F5A /* LaunchScreen.storyboard */; };
+		04A7F81529D3D1700069EBCE /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7F81429D3D1700069EBCE /* ItemDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		041D4B6F29CB9A9600C3F2BA /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		043A8A4029CBCC7E003B2F5A /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
 		043A8A4429CBD60B003B2F5A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04A7F81429D3D1700069EBCE /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				041D4B6929CB881D00C3F2BA /* AddView.swift */,
 				043A8A4029CBCC7E003B2F5A /* NoItemsView.swift */,
 				043A8A4429CBD60B003B2F5A /* LaunchScreen.storyboard */,
+				04A7F81429D3D1700069EBCE /* ItemDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				041D4B6A29CB881D00C3F2BA /* AddView.swift in Sources */,
 				041D4B7029CB9A9600C3F2BA /* ListViewModel.swift in Sources */,
 				041D4B6629CB818F00C3F2BA /* ListView.swift in Sources */,
+				04A7F81529D3D1700069EBCE /* ItemDetailView.swift in Sources */,
 				041D4B5429CB800100C3F2BA /* GoalGetterApp.swift in Sources */,
 				043A8A4129CBCC7E003B2F5A /* NoItemsView.swift in Sources */,
 				041D4B6829CB844B00C3F2BA /* ListRowView.swift in Sources */,

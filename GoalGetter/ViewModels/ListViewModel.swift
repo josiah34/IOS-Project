@@ -6,7 +6,7 @@
 //  Josiah Galloway 101296257
 
 import Foundation
-
+import SwiftUI
 // Define a class named `ListViewModel` that manages the to-do list.
 class ListViewModel: ObservableObject{
     
@@ -47,8 +47,8 @@ class ListViewModel: ObservableObject{
     }
     
     // This function adds an item to the list.
-    func addItem(title: String){
-        let newItem = ItemModel(title: title, isCompleted: false)
+    func addItem(title: String, priority: Priority){
+        let newItem = ItemModel(title: title, priority: priority, isCompleted: false)
         items.append(newItem)
     }
     
@@ -63,6 +63,43 @@ class ListViewModel: ObservableObject{
     func saveItems() {
         if let encodedData = try? JSONEncoder().encode(items){
             UserDefaults.standard.set(encodedData, forKey: itemsKey )
+        }
+    }
+    func sortItemsByPriority() {
+        items.sort { priorityValue(for: $0) < priorityValue(for: $1) }
+    }
+
+    private func priorityValue(for item: ItemModel) -> Int {
+        switch item.priority {
+        case .high:
+            return 0
+        case .medium:
+            return 1
+        case .low:
+            return 2
+        }
+    }
+    // This function returns a color based on the given priority.
+    func getPriorityColor(priority: Priority) -> Color {
+        switch priority {
+        case .high:
+            return .red
+        case .medium:
+            return .orange
+        case .low:
+            return .green
+        }
+    }
+
+    // This function returns the next priority level after the given one.
+    func getNextPriority(currentPriority: Priority) -> Priority {
+        switch currentPriority {
+        case .high:
+            return .medium
+        case .medium:
+            return .low
+        case .low:
+            return .high
         }
     }
         
