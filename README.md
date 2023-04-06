@@ -2,11 +2,11 @@
 
 
 Features To Include
-- Adding task 
-- Deleting Task 
-- Editing Task 
-- Due Date For Task 
-- Priortizing Task(High , Medium , Low)
+- Adding task - Complete
+- Deleting Task - Complete
+- Editing Task - Complete
+- Due Date For Task - Remaining 
+- Priortizing Task(High , Medium , Low) - complete
 
 
 ![Icon Display](https://github.com/josiah34/IOS-Project/blob/RK/lOGO/Screenshot%202023-03-28%20at%2010.58.19%20AM.png)
