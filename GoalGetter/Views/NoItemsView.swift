@@ -30,7 +30,7 @@ struct NoItemsView: View {
                 
                 // Use a `NavigationLink` to allow the user to launch the `AddView`.
                 NavigationLink(
-                    destination:AddView() ,
+                    destination:AddView(, dueDate: <#Binding<Date?>#>) 
                     label:{
                         // Display a button with text that says "Launch your goals🚀".
                         Text("Launch your goals🚀")
